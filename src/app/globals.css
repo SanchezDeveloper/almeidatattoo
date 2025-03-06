@@ -2,32 +2,142 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @keyframes pulsar {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2); /* Aumenta o tamanho */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .pulsar-logo {
+    animation: pulsar 1.5s infinite ease-in-out; /* 1.5s para a duração de cada ciclo */
+  }
+  
 
-@media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /* Cores base do tema claro */
+    --background: 0 0% 100%; /* Branco */
+    --foreground: 0 0% 10%; /* Preto suave */
+    --card: 0 0% 95%; /* Cinza muito claro */
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 95%;
+    --popover-foreground: 0 0% 10%;
+
+    /* Dourado metálico */
+    --gold-light: 48 90% 75%; /* Reflexo mais claro */
+    --gold: 45 80% 55%; /* Dourado principal */
+    --gold-dark: 42 70% 40%; /* Tons profundos */
+
+    /* Gradiente dourado para botões, bordas e efeitos */
+    --gold-gradient: linear-gradient(135deg, hsl(48, 90%, 75%), hsl(45, 80%, 55%), hsl(42, 70%, 40%));
+
+    /* Cores primárias */
+    --primary: var(--gold);
+    --primary-foreground: 0 0% 10%;
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 20%;
+    --accent: var(--gold-dark);
+    --accent-foreground: var(--gold-light);
+
+    /* Elementos auxiliares */
+    --muted: 0 0% 85%;
+    --muted-foreground: 0 0% 40%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Bordas e inputs */
+    --border: 0 0% 80%;
+    --input: 0 0% 85%;
+    --ring: var(--gold-gradient);
+
+    /* Gráficos e elementos visuais */
+    --chart-1: var(--gold);
+    --chart-2: var(--gold-dark);
+    --chart-3: var(--gold-light);
+    --chart-4: 0 0% 30%;
+    --chart-5: 0 0% 60%;
+
+    --radius: 0.5rem;
   }
+
+  .dark {
+    /* Cores base do tema escuro */
+    --background: 0 0% 5%; /* Preto absoluto */
+    --foreground: 0 0% 90%; /* Cinza bem claro */
+    --card: 0 0% 10%; /* Cinza muito escuro */
+    --card-foreground: 0 0% 90%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 90%;
+
+    /* Dourado metálico no tema escuro */
+    --primary: var(--gold);
+    --primary-foreground: 0 0% 10%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 85%;
+    --accent: var(--gold-dark);
+    --accent-foreground: var(--gold-light);
+
+    /* Gradiente dourado para elementos no dark mode */
+    --gold-gradient: linear-gradient(135deg, hsl(48, 90%, 75%), hsl(45, 80%, 55%), hsl(42, 70%, 40%));
+
+    /* Elementos auxiliares */
+    --muted: 0 0% 25%;
+    --muted-foreground: 0 0% 60%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Bordas e inputs */
+    --border: 0 0% 20%;
+    --input: 0 0% 25%;
+    --ring: var(--gold-gradient);
+
+    /* Gráficos e elementos visuais */
+    --chart-1: var(--gold);
+    --chart-2: var(--gold-dark);
+    --chart-3: var(--gold-light);
+    --chart-4: 0 0% 30%;
+    --chart-5: 0 0% 50%;
+  }
+  /* Para o tema claro: */
+  .text-gold-gradient {
+    background: var(--gold-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2), 0 0 55px rgba(255, 223, 0, 0.7); /* Sombra dourada suave */
+  }
+
+  /* Para o tema escuro: */
+  [data-theme="dark"] .text-gold-gradient {
+    background: var(--gold-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none; /* Sem sombra no tema escuro */
+  }
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+
   }
+  body {
+    @apply bg-background text-foreground;
+
+  }
+
 }
