@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+readme_content = """
+# Almeida Tattoo - Site Institucional
 
-## Getting Started
+Este é o site institucional desenvolvido para o **Almeida Tattoo Studio**, criado com o objetivo de fornecer informações sobre os serviços de tatuagem, a equipe de tatuadores e facilitar o agendamento de consultas. 
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
+- **Next.js** - Framework React para renderização do lado do servidor e otimização de desempenho.
+- **React** - Biblioteca JavaScript para a criação de interfaces de usuário dinâmicas.
+- **TypeScript** - Superset de JavaScript que adiciona tipagem estática ao projeto.
+- **Tailwind CSS** - Framework de utilitários CSS para design responsivo e estilização rápida.
+- **Framer Motion** - Biblioteca de animações para uma experiência de usuário mais interativa.
+- **ShadCN** - Biblioteca de componentes UI.
+- **Swiper** - Biblioteca para implementação de carrosséis e slides interativos.
+
+## Link do Site
+
+O site já está no ar! Acesse: [almeidatattoo.com.br](#) *(substitua o link pelo real, quando disponível)*.
+
+## Como rodar o projeto localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/almeida-tattoo.git
+Navegue até o diretório do projeto:
+
+bash
+Copiar
+cd almeida-tattoo
+Instale as dependências:
+
+bash
+Copiar
+npm install
+Inicie o servidor de desenvolvimento:
+
+bash
+Copiar
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Acesse o site no seu navegador em http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contribuições
+Sinta-se à vontade para contribuir com melhorias e correções. Abra um pull request e descreva as alterações realizadas. """
