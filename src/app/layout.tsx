@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Almeida Tattoo",
   description: "Estúdio de tatuagem especializado em artes exclusivas e personalizadas.",
   icons: {
-    icon: "images/logo-ico.ico", // Caminho do favicon
+    icon: "favicon.ico", // Caminho do favicon
   },
   openGraph: {
     title: "Almeida Tattoo - Arte na Pele",

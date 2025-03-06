@@ -12,7 +12,7 @@ export default function Home() {
         <Navbar></Navbar>
         <WhatsAppBtn></WhatsAppBtn>
       
-        <section className="flex flex-col items-center justify-center min-h-screen px-6 text-center">
+        <section className="flex flex-col items-center justify-center min-h-screen px-6 text-center mt-20 lg:mt-8">
             <h1 className="text-3xl font-bold mb-4 uppercase tracking-wider text-yellow-600">
                     Feche sua tattoo
             </h1>
@@ -43,9 +43,9 @@ export default function Home() {
                 <h2 className="text-2xl font-bold mb-3 text-yellow-600">Como Chegar</h2>
                 <div className="flex items-center gap-3">
                     <FaMapMarkerAlt className="text-red-500 text-2xl" />
-                    <a href="https://maps.app.goo.gl/tWJjQWRYBf9yGbDa9" target="_blank" className="pointer">3 3ª Avenida, Área Especial 13, bloco h/i - Núcleo Bandeirante - Brasília/DF</a>
+                    <a href="https://maps.app.goo.gl/tWJjQWRYBf9yGbDa9" target="_blank" className="pointer">3&ordf; Avenida, Área Especial 13, bloco h/i - Núcleo Bandeirante - Brasília/DF</a>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d239.86199176226154!2d-47.96126090065303!3d-15.867532683129413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1741217856543!5m2!1spt-BR!2sbr" className="mt-3" width="600" height="450" style={{border:0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d239.86199176226154!2d-47.96126090065303!3d-15.867532683129413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1741217856543!5m2!1spt-BR!2sbr" className="mt-3" width="100%" height="450" style={{border:0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
       

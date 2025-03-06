@@ -8,9 +8,9 @@ export default function FSection() {
     "/images/gallery-tattoo31.jpeg",
     "/images/gallery-tattoo32.jpg",
     "/images/gallery-tattoo33.webp",
-    "/images/gallery-tattoo34.webp",
+    "/images/gallery-tattoo34.jpg",
     "/images/gallery-tattoo35.webp",
-    "/images/gallery-tattoo36.webp",
+    "/images/gallery-tattoo36.jpg",
   ];
 
   return (
